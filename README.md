@@ -162,37 +162,13 @@ Loan API returns heavy JSON with unnecessary fields.
 ## Solution
 Filter only required fields before sending to LLM.
 
-## Code
-```javascript
-var filteredAccounts = raw_accounts.map(acc => {
-  return {
-    loan_account_id: acc.loan_account_id,
-    loan_type: acc.loan_type,
-    tenure: acc.tenure
-  };
-});
-Benefits
-Reduces tokens
-Improves performance
-Avoids hallucination
-
----
-
-# ⚠️ 6. docs/edge-cases.md
-
-```md
-# Edge Cases
-
-## 1. Invalid OTP
-- Show error
-- Ask again
-
-## 2. API Failure
-- Show retry message
-
-## 3. User Changes Number
-- Clear phone & DOB
-- Restart flow
-
 ## 4. Non-English Input
 - Respond: "I can only assist in English."
+SCREEN SHOTS:
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f4f464fd-c66f-4990-94fa-83ac4c9f5db1" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ac94df41-78f8-4dbe-be25-915019902724" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ba3ef73b-3f5c-406d-b635-52f2894f1aea" />
+
+
+
